@@ -35,7 +35,10 @@ public class TestHunSpell {
 	@Before
 	public void setUp() throws Exception {
 		System.err.println("Loading Hunspell");
-		dir = "/usr/share/hunspell";
+//		dir = "/usr/share/hunspell";
+//		dir = "/works/bugs/hunspell/nlpapps/hunspell_dictionaries";
+		dir = "resources/hunspell_dictionaries";
+
 		if (System.getProperties().containsKey("root")) {
 			dir = System.getProperty("root");
 		}
